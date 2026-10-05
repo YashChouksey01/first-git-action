@@ -1,0 +1,11 @@
+name:  first-workflow
+on:  workflow_dispatch
+jobs:
+  first_job:
+    runs-on: ubuntu-slim
+    steps:
+      - name:  print hello
+        run:  echo "hello learning workflow in git hub"
+      - name:  print bye
+        run:  echo "bye"
+    
