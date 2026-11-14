@@ -1,3 +1,4 @@
+# 1
 name:  first-workflow
 on:  workflow_dispatch
 jobs:
@@ -9,3 +10,10 @@ jobs:
       - name:  print bye
         run:  echo "bye"
     
+
+
+# A runner is the machine/virtual machine where your GitHub Actions workflow actually executes.
+# 1) GitHub‑hosted runners are virtual machines provided by GitHub to execute GitHub Actions workflows, 
+     # offering preconfigured environments (Ubuntu, Windows, macOS) with they come with many software tools pre-installed and automatic provisioning/decommissioning.
+
+
