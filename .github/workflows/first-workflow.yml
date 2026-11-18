@@ -1,10 +1,10 @@
 # 1
-name:  first-workflow
-on:  workflow_dispatch
-jobs:
-  first_job:
-    runs-on: ubuntu-slim
-    steps:
+name:  first-workflow     # name of workflow
+on:  workflow_dispatch    # its called github event, which triggers the workflow.  Here, workflow_dispatch is a manual trigger for the workflow.
+jobs:                     # jobs is a collection of steps that execute on the same runner. Each job runs in a fresh instance of the virtual environment.
+  first_job:              # name of the job
+    runs-on: ubuntu-slim  # specifies the operating system for the runner
+    steps:                # steps is a list of all the actions that will be executed in the job
       - name:  print hello
         run:  echo "hello learning workflow in git hub"
       - name:  print bye
